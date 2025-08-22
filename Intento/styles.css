@@ -4,6 +4,28 @@ body {
     background: linear-gradient(to bottom, #dadada, #f3f3f3);
 }
 
+
+header {
+    background-color: #B5121B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* logo izq + texto al lado */
+    padding: 10px 40px;
+    height: 7vh;
+}
+
+header img {
+    height: 50px;  /* ajusta el tamaño del logo */
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 23px;
+    margin: 0;
+    font-weight: bold;
+}
+
 .login-container {
     display: flex;
     justify-content: center;
@@ -13,6 +35,7 @@ body {
 
 .login-box {
     background: #ffffff;
+    position: absolute;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -47,7 +70,7 @@ body {
 .login-box button {
     width: 100%;
     padding: 12px;
-    background: #dd0303;
+    background: #C8102E;
     color: white;
     border: none;
     border-radius: 20px;
@@ -56,7 +79,7 @@ body {
 }
 
 .login-box button:hover {
-    background: #be0202;
+    background: #970c23;
 }
 
 .extra {
@@ -65,7 +88,7 @@ body {
 }
 
 .extra a {
-    color: #dd0303;
+    color: #C8102E;
     text-decoration: none;
 }
 
@@ -81,20 +104,20 @@ body {
     align-items: center;
     gap: 30px;
     font-size: 13px;
-    color: red;
+    color: #C8102E;
 }
 
 /* Custom dropdown */
 .dropdown {
     position: relative;
     font-size: 13px;
-    color: red;
+    color: #C8102E;
     cursor: pointer;
 }
 
 .dropdown-selected {
     padding: 5px 10px;
-    border-bottom: 1px solid red;
+
 }
 
 .dropdown-list {
@@ -103,9 +126,10 @@ body {
     top: 100%;
     left: 0;
     background: white;
-    border: 1px solid red;
+    border: 1px solid rgb(99, 99, 99);
     border-radius: 4px;
     list-style: none;
+    justify-content: flex-start;
     padding: 0;
     margin: 4px 0 0 0;
     width: max-content;
@@ -114,11 +138,11 @@ body {
 
 .dropdown-list li {
     padding: 6px 12px;
-    color: red;
+    color: #C8102E;
 }
 
 .dropdown-list li:hover {
-    background: red;
+    background: #C8102E;
     color: white;
 }
 
